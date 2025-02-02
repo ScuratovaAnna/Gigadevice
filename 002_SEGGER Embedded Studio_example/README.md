@@ -14,4 +14,8 @@ Tools -> Package Manager -> GigaDevice -> Gd32F30x CPU Support Package -> instal
 * systick.h  
 В IDE добавить выше перечисленные файлы в проект _Sorce Files_ -> _Add Existing File_. Собрать проект нажатием "горячей клавиши F7" -> _Build complete._  
 ## Установка драйверов  
-Скачиваем и устанавливаем [ драйвера.](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack "J-Link Software and Documentation Pack") (J-Link Software and Documentation Pack). Для клонов  JLink V8 USB купленных на aliexpress. Актуальная версия (рабочая версия драйверов) V7.90 от 2023-08-02. С последней версией V7.98c от 2024-08-07 программатор отладчик не определяется!!!
+Скачиваем и устанавливаем [ драйвера.](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack "J-Link Software and Documentation Pack") (J-Link Software and Documentation Pack). Для клонов  JLink V8 USB купленных на aliexpress. Актуальная версия (рабочая версия драйверов) V7.90 от 2023-08-02. С последней версией V7.98c от 2024-08-07 программатор отладчик не определяется!!!  
+## Установка IDE.  
+Embedded Studio for ARM (legacy). V7.32a [2023-11-29]...  
+## Установка тёмной темы Embedded Studio IDE.  
+To enable dark mode go to Tools->Options->Environment->User Interface->Theme and set it to Dark...  
