@@ -39,7 +39,7 @@ __STATIC_INLINE void DWT_Delay_us(volatile uint32_t au32_microseconds);
 
 void GPIO_Init(void) {
   rcu_periph_clock_enable(RCU_GPIOB);                                             // Включение тактирования GPIOB
-  gpio_init(GPIOB, GPIO_MODE_OUT_PP, GPIO_OSPEED_50MHZ, GPIO_PIN_1 | GPIO_PIN_2); // Настройка PB2 как LED
+  gpio_init(GPIOB, GPIO_MODE_OUT_PP, GPIO_OSPEED_50MHZ, GPIO_PIN_1 | GPIO_PIN_2); // Настройка PB2 PB1
 }
 
 int main(void) {
@@ -78,6 +78,5 @@ __STATIC_INLINE void DWT_Delay_us(volatile uint32_t au32_microseconds) {
   uint32_t au32_ticks = (SystemCoreClock / 1000000);
   au32_microseconds *= au32_ticks;
   while ((DWT->CYCCNT - au32_initial_ticks) < au32_microseconds - au32_ticks);
-}
 }
 /*************************** End of file ****************************/
