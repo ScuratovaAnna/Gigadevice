@@ -23,8 +23,7 @@ __IO bool led_state = 0;
 
 // Простая задержка
 void delay_simple(volatile uint32_t count) {
-  for (; count != 0; count--)
-    ;
+  for (; count != 0; count--);
 }
 
 // Функция антидребезга (программная задержка)
